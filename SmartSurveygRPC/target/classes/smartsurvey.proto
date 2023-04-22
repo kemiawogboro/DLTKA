@@ -1,0 +1,21 @@
+syntax ="proto3";
+
+option java_multiple_files=true;
+option java_package ="grpc.examples.smartsurvey";
+option java_outer_classname="SmartSurveyServiceImpl";
+
+package smartsurvey;
+//service definition with unnary rpc method
+
+service Checkin{
+   rpc login(loginRequest) returns (loginResponse){}
+
+}
+//the request message containing username
+message loginRequest{
+  string name=1;
+}
+//response message containing  the response
+message loginResponse{
+  string message =1;
+}
