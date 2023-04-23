@@ -190,7 +190,11 @@ public final class CheckinGrpc {
   /**
    */
   public static final class CheckinBlockingStub extends io.grpc.stub.AbstractStub<CheckinBlockingStub> {
-    private CheckinBlockingStub(io.grpc.Channel channel) {
+    public class RequestMessage {
+
+	}
+
+	private CheckinBlockingStub(io.grpc.Channel channel) {
       super(channel);
     }
 
